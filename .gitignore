@@ -1,0 +1,10 @@
+local.properties
+*.apk
+*.aab
+*.keystore
+*.jks
+build/
+.gradle/
+.cxx/
+*_BurstDebugInformation_DoNotShip/
+.DS_Store
