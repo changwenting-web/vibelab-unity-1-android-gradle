@@ -1,0 +1,17 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace unity.namespace
+    compileSdk (unity.compileSdkVersion as Integer)
+
+    defaultConfig {
+        minSdk (unity.minSdkVersion as Integer)
+        targetSdk (unity.targetSdkVersion as Integer)
+        consumerProguardFiles 'proguard-unity.txt'
+        ndk {
+            abiFilters unity.abiFilters
+        }
+    }
+}
