@@ -1,0 +1,16 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.vibelab.unity1'
+    compileSdk (unity.compileSdkVersion as Integer)
+
+    defaultConfig {
+        applicationId unity.applicationId
+        minSdk (unity.minSdkVersion as Integer)
+        targetSdk (unity.targetSdkVersion as Integer)
+        versionCode (unity.versionCode as Integer)
+        versionName unity.versionName
+    }
+}
